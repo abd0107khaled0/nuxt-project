@@ -4,6 +4,8 @@ Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduct
 
 ## Setup
 
+## use node 22
+
 Make sure to install dependencies:
 
 ```bash
