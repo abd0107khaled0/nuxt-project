@@ -1,13 +1,20 @@
-// import this after install `@mdi/font` package
+// import icons
 import '@mdi/font/css/materialdesignicons.css'
 
+// import vuetify styles (مهم جدًا للـ utility classes)
+import 'vuetify/styles'
+
 import { createVuetify } from 'vuetify'
+import * as components from 'vuetify/components'
+import * as directives from 'vuetify/directives'
 
 export default defineNuxtPlugin((app) => {
   const vuetify = createVuetify({
     ssr: true,
+    components,
+    directives,
     theme: {
-      defaultTheme: 'dark', // 👈 حدد الدارك مود كـ default
+      defaultTheme: 'light',
       themes: {
         light: {
           dark: false,
